@@ -17,12 +17,26 @@
   .gallery-photo { aspect-ratio: .88; }
 }
 
-/* The desktop portrait keeps its original warmth and remains clearly visible. */
+/* Fade the portrait into the graphite field and keep the full hairline below the navigation. */
 @media (min-width: 701px) {
   .campaign::before { background: linear-gradient(90deg, #1b1612 0%, #1d1714f5 22%, #211915bc 42%, #21191530 65%, transparent 82%), linear-gradient(180deg, #1b16111f, transparent 55%, #1b161166); }
   .campaign::after { background: none; }
-  .campaign-original { filter: saturate(.98) contrast(1.02) brightness(1.07); }
+  .campaign-portrait {
+    top: 78px;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 28%, #000 100%);
+  }
+  .campaign-silhouette {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 9%, #000 100%);
+  }
+  .campaign-original { object-position: center top; transform: none; filter: saturate(.98) contrast(1.02) brightness(1.07); }
 }
 @media (max-width: 700px) {
-  .campaign-original { filter: saturate(.96) contrast(1.01) brightness(1.03); }
+  .campaign-portrait { top: 86px; }
+  .campaign-silhouette {
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 7%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 7%, #000 100%);
+  }
+  .campaign-original { object-position: center top; transform: none; filter: saturate(.96) contrast(1.01) brightness(1.03); }
 }
