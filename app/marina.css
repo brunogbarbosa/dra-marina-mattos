@@ -1,0 +1,28 @@
+/* Marina Mattos — graphite, warm ivory and soft gold. */
+.essence-editorial { background: #f5f0e8; }
+.essence-values { background: #e8dcc9; }
+.essence-value { background: #faf7efd9; border-color: #ffffffa8; }
+.essence-value-icon { background: #dcc9a8; color: #2a211c; }
+.essence-editorial-description, .essence-value p { color: #6c6157; }
+.gallery-chapter, .closing-chapter, .footer, .result-dialog { background: #201a17; }
+.gallery-photo, .comparison { background: #372b22; }
+.gallery-heading p, .footer-main > div { color: #e0d3c3; }
+.ritual-chapter { background: #f5f0e8; }
+.social-chapter { background: #e9ddc9; }
+.closing-chapter { background: radial-gradient(circle at 80% 20%, #4a3827, #201a17 58%); }
+.menu-dialog { background: #f5f0e8; }
+.viewer-note { color: #d7ba84; }
+@media (max-width: 700px) {
+  .gallery-heading p { max-width: 30rem; }
+  .gallery-photo { aspect-ratio: .88; }
+}
+
+/* The desktop portrait keeps its original warmth and remains clearly visible. */
+@media (min-width: 701px) {
+  .campaign::before { background: linear-gradient(90deg, #1b1612 0%, #1d1714f5 22%, #211915bc 42%, #21191530 65%, transparent 82%), linear-gradient(180deg, #1b16111f, transparent 55%, #1b161166); }
+  .campaign::after { background: none; }
+  .campaign-original { filter: saturate(.98) contrast(1.02) brightness(1.07); }
+}
+@media (max-width: 700px) {
+  .campaign-original { filter: saturate(.96) contrast(1.01) brightness(1.03); }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#201a17"/>
+  <path d="M8 49.5h48" stroke="#d7ba84" stroke-width=".8" opacity=".8"/>
+  <path d="M9 15.5c9-8 37-8 46 0" fill="none" stroke="#d7ba84" stroke-width=".7" opacity=".7"/>
+  <text x="31.5" y="41" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="29" letter-spacing="-4" fill="#f5f0e8">MM</text>
+  <circle cx="51" cy="49.5" r="1.7" fill="#d7ba84"/>
+</svg>
