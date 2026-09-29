@@ -24,4 +24,4 @@ Importe este repositório na Vercel com o diretório raiz `./`. O framework Next
 
 ## Conteúdo
 
-Textos, links e cores principais estão em `data/site.ts`. O link de WhatsApp, a formação pela UFF, o CRO/RJ 44152 e a localização foram transcritos da bio de Instagram fornecida como referência. Os retratos e os comparativos foram enviados com o pedido e convertidos para WebP sem retoque. A galeria informa que os resultados são individuais. O favicon está em `app/icon.svg`. Não foi criada imagem OG.
+Textos, links e cores principais estão em `data/site.ts`. O link de WhatsApp, a formação pela UFF, o CRO/RJ 44152 e a localização foram transcritos da bio de Instagram fornecida como referência. Os retratos e os comparativos foram enviados com o pedido e convertidos para WebP sem retoque. A galeria informa que os resultados são individuais. O favicon está em `app/icon.svg`. A imagem OG enviada posteriormente está em `public/og-marina-mattos.jpg`, otimizada para 1200 × 675 pixels.

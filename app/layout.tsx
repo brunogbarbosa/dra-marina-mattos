@@ -12,7 +12,24 @@ export const metadata: Metadata = {
   title: site.seo.title,
   description: site.seo.description,
   ...(site.seo.url ? { alternates: { canonical: '/' } } : {}),
-  openGraph: { title: site.seo.title, description: site.seo.description, locale: 'pt_BR', type: 'website' },
+  openGraph: {
+    title: site.seo.title,
+    description: site.seo.description,
+    locale: 'pt_BR',
+    type: 'website',
+    images: [{
+      url: '/og-marina-mattos.jpg',
+      width: 1200,
+      height: 675,
+      alt: 'Dra. Marina Mattos — Harmonização Orofacial em Cabo Frio',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: site.seo.title,
+    description: site.seo.description,
+    images: ['/og-marina-mattos.jpg'],
+  },
 };
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {
   return <html lang="pt-BR"><body style={{
